@@ -1,0 +1,264 @@
+/* CUSTOM.CSS */
+body {
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+}
+
+p {
+  font-size: 1.25em;
+  text-align: left;
+}
+
+ul {
+  text-align: left;
+  font-size: 1.25em;
+}
+
+section {
+  width: 100%;
+}
+
+#intro {
+  font-family: 'Hind Guntur', sans-serif;
+  height: 95.5vh;
+  background: url(../images/caesarea.jpg) no-repeat top center;
+
+}
+
+#intro .container {
+  padding-top: 35vh;
+}
+
+#intro h1 {
+  font-size: 4em;
+}
+
+hr {
+    background: url('../images/JL_logo_mini.png') no-repeat top center;
+    background-size: contain;
+    display: block;
+    height: 18px;
+    border: 0;
+    position: relative;
+}
+hr:before,
+hr:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: #d7d7d7;
+    height: 2px;
+    top: 8px;
+}
+hr:before {
+    left: 0;
+    right: 50%;
+    margin-right: 10px;
+}
+hr:after {
+    right: 0;
+    left: 50%;
+    margin-left: 10px;
+}
+
+#navbar {
+  background-color: #568EA3;
+
+}
+nav a:link {
+  color: #dee9ed;
+}
+nav a:hover {
+  color: #365763;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+#about {
+  width: 100%;
+  background-color: #FCFCFC;
+  padding: 50px 0;
+}
+
+#about img {
+  border-radius: 50%;
+}
+
+#about p {
+  text-align: left;
+  text-indent: 50px;
+}
+
+#about .fa {
+  padding-right 5px;
+}
+
+#skills {
+  width: 100%;
+  padding: 50px 0;
+  background-color: #F6F7F6;
+}
+
+#skills p {
+  text-indent: 50px;
+}
+
+#workexp {
+  background-color: #FCFCFC;
+  padding: 50px 0;
+}
+
+#workexp ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+#workexp .desc p {
+  text-indent: 50px;
+}
+
+.center p {
+  text-align: center;
+}
+
+#education {
+  background-color: #F6F7F6;
+  padding: 50px 0;
+}
+
+.edu-desc {
+  text-indent: 50px;
+}
+
+#schools hr:before {
+    content: none;
+}
+
+#schools hr:after {
+    content: none;
+}
+
+#schools hr {
+  width: 10%;
+  background: none;
+  border-top: 1px solid grey;
+}
+
+#schools h4 {
+  text-decoration: underline;
+}
+
+.timeline p {
+  text-align: center;
+  text-indent: none;
+}
+
+.title_hr  hr{
+  width: 75%;
+}
+
+#projects {
+  padding: 50px 0;
+  background-color: #FCFCFC;
+  min-height: 515px;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+
+.proj {
+  display: none;
+  width: 100px;
+  height: 100px;
+  margin: 5px 0;
+}
+
+.proj img {
+  border: 3px solid black;
+}
+
+.show {
+  display: block;
+}
+
+.proj-summary {
+
+}
+#proj-image {
+  width: 400px;
+  height: 400px;
+}
+#proj-image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+#proj-desc p {
+  text-indent: 50px
+}
+
+#contact {
+  background-color: #568EA3;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 200px;
+}
+#contact p {
+  text-indent: 50px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+
+  .row {
+    width: 100%;
+  }
+
+  #intro {
+    height: 90vh;
+  }
+}
+
+
+
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+
+  #intro {
+    font-family: 'Hind Guntur', sans-serif;
+    height: 95.5vh;
+    background: url(../images/caesarea.jpg) no-repeat cover top center;
+
+  }
+
+  #intro .container {
+      padding-top: 25vh;
+  }
+
+
+  #proj-image {
+    padding-top: 15px;
+    width: 100%;
+    height: 400px;
+  }
+
+  #proj-select {
+    height: 260px;
+  }
+}
